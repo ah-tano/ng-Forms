@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 1040px;
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  color: #1d1d1d;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: rgba(243, 243, 243, 0.68);
+  border: 1px dashed #cccccc;
+}
+
+.container h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+
+

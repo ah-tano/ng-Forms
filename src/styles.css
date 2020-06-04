@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+input[type="text"] {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 250px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #cccccc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+input:focus {
+  border: 1px solid #0080ff;
+}
+
+button {
+  outline: none;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  min-height: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgba(214, 214, 214, 0.66);
+}
