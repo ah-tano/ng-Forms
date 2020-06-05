@@ -8,3 +8,8 @@
 .center-container label {
   text-transform: uppercase;
 }
+
+.main-header {
+  text-align: center;
+  text-transform: uppercase;
+}

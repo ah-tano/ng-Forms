@@ -1,6 +1,10 @@
-<div class="container">
-  <h3>Basic Form Control</h3>
-<app-name-editor></app-name-editor>
-<h3>Grouping From Controls</h3>
-<app-profile-editor></app-profile-editor>
+<div class="nav-container">
+<nav class="nav-btn-container">
+  <a class="nav nav-1" routerLink="/profile-editor">Reactive Forms</a>
+  <a class="nav nav-2" routerLink="/worker-editor">Template-driven Forms</a>
+</nav>
 </div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormArray, FormBuilder, Validators} from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-profile-editor',
@@ -32,7 +34,9 @@ export class ProfileEditorComponent implements OnInit {
     ])
   });
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,
+              private route: ActivatedRoute,
+              private location: Location) { }
 
   ngOnInit(): void {
   }
@@ -56,6 +60,10 @@ export class ProfileEditorComponent implements OnInit {
 
   addAlias() {
     this.aliases.push(this.fb.control(''));
+  }
+
+  goBack() {
+    this.location.back();
   }
 
 }
