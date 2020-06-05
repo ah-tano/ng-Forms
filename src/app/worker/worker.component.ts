@@ -28,5 +28,7 @@ export class WorkerComponent {
 
   goBack() { this.location.back(); }
 
+  newWorker() { this.model = new Worker(2, '', ''); }
+
 }
 

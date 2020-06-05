@@ -2,11 +2,15 @@
   margin-right: 20px;
 }
 .submit-btn {
-margin: 10px 0;
+ margin: 10px 0;
 }
 
 .goBack-btn {
   float: right;
+}
+
+.addWorker-btn {
+  margin-left: 10px;
 }
 
 select {
@@ -14,6 +18,23 @@ select {
   height: 40px;
   padding: 10px;
   margin-left: 10px;
+}
+
+.container {
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  right: 267px;
+  top: 43px;
+  width: 248px;
+  height: 18px;
+  color: rgba(169, 68, 66, 0.78);
+  background-color: rgba(190, 66, 65, 0.36);
+  border-radius: 3px;
+  padding: 10px;
+  line-height: 18px;
 }
 
 

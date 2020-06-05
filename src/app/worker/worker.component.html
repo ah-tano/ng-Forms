@@ -3,10 +3,19 @@
   <button class="goBack-btn" (click)="goBack()">go back</button>
 
   <h3>Worker From</h3>
-  <form #workerForm="ngForm">
+  <form (ngSubmit)="onSubmit()" #workerForm="ngForm">
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name">
+      <input class="form-control"
+             id="name"
+             [(ngModel)]="model.name"
+             name="name"
+             #name="ngModel"
+             required>
+    </div>
+    <div [hidden]="name.valid || name.pristine"
+      class="alert alert-danger">
+      Name is required
     </div>
     <div class="form-group">
       <label for="hobby">Hobby</label>
@@ -23,7 +32,8 @@
     <br>
     {{diagnostic}}
     <br>
-    <button type="submit" class="submit-btn">Submit</button>
+    <button type="submit" class="submit-btn" [disabled]="!workerForm.form.valid">Submit</button>
+    <button type="button" class="addWorker-btn" (click)="newWorker(); workerForm.reset()">Add new Worker</button>
   </form>
 </div>
 
