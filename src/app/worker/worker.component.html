@@ -3,6 +3,7 @@
   <button class="goBack-btn" (click)="goBack()">go back</button>
 
   <h3>Worker From</h3>
+  <div [hidden]="submitted">
   <form (ngSubmit)="onSubmit()" #workerForm="ngForm">
     <div class="form-group">
       <label for="name">Name</label>
@@ -35,5 +36,27 @@
     <button type="submit" class="submit-btn" [disabled]="!workerForm.form.valid">Submit</button>
     <button type="button" class="addWorker-btn" (click)="newWorker(); workerForm.reset()">Add new Worker</button>
   </form>
+  </div>
+
+  <div [hidden]="!submitted">
+    <h2>You submitted the following:</h2>
+    <table class="submitted-info">
+      <tr>
+        <td class="input-name">Name</td>
+        <td class="input-response">{{ model.name }}</td>
+      </tr>
+      <tr>
+        <td class="input-name">Hobby</td>
+        <td class="input-response">{{ model.hobby }}</td>
+      </tr>
+      <tr>
+        <td class="input-name">Position</td>
+        <td class="input-response">{{ model.position }}</td>
+      </tr>
+    </table>
+    <br>
+    <button (click)="submitted=false">Edit</button>
+  </div>
+
 </div>
 

@@ -37,4 +37,18 @@ select {
   line-height: 18px;
 }
 
+table.submitted-info {
+  width: 400px;
+  border-collapse: collapse;
+}
+
+table.submitted-info td {
+  border: 1px solid #d7d7d7;
+  padding: 15px;
+}
+
+table.submitted-info td.input-response:hover {
+  background-color: rgba(236, 236, 236, 0.7);
+}
+
 
