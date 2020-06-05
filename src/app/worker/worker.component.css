@@ -1,0 +1,19 @@
+.form-group label{
+  margin-right: 20px;
+}
+.submit-btn {
+margin: 10px 0;
+}
+
+.goBack-btn {
+  float: right;
+}
+
+select {
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+

@@ -7,7 +7,13 @@
 .center-container label {
   text-transform: uppercase;
 }
+
+.center-container input {
+  margin-left: 10px;
+}
+
 .main-header {
   text-align: center;
   text-transform: uppercase;
 }
+

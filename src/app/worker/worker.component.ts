@@ -14,7 +14,7 @@ export class WorkerComponent {
 
   position = ['DevOps', 'Front-end Developer', 'Back-end Developer', 'Junior Front-end Developer']
 
-  model = new Worker(2, 'Bob', this.position[3], 'buy flip flops from different countries');
+  model = new Worker(1, 'Bob', this.position[3], 'buy flip flops from different countries');
 
   submitted = false;
 
@@ -26,9 +26,7 @@ export class WorkerComponent {
 
   get diagnostic() { return JSON.stringify(this.model); }
 
-  goBack() {
-    this.location.back();
-  }
+  goBack() { this.location.back(); }
 
 }
 

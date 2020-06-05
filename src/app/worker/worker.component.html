@@ -1,16 +1,29 @@
 <div class="container">
+
+  <button class="goBack-btn" (click)="goBack()">go back</button>
+
   <h3>Worker From</h3>
-  <form>
+  <form #workerForm="ngForm">
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" required="">
+      <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name">
     </div>
     <div class="form-group">
       <label for="hobby">Hobby</label>
-      <input type="text" class="form-control" id="hobby">
+      <input type="text" class="form-control" id="hobby" [(ngModel)]="model.hobby" name="hobby">
     </div>
-
-    <button type="submit" class="btn btn-success">Submit</button>
+    <div class="form-group">
+      <label for="position" class="select-position">
+        Position
+        <select class="form-control" id="position" required [(ngModel)]="model.position" name="position">
+          <option *ngFor="let p of position" [value]="p">{{p}}</option>
+        </select>
+      </label>
+    </div>
+    <br>
+    {{diagnostic}}
+    <br>
+    <button type="submit" class="submit-btn">Submit</button>
   </form>
 </div>
-<button (click)="goBack()">go back</button>
+

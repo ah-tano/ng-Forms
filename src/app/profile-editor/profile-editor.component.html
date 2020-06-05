@@ -1,4 +1,7 @@
+<button class="goBack-btn" (click)="goBack()">go back</button>
+
 <h3 class="main-header">Grouping From Controls</h3>
+
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
   <div class="center-container">
   <label>
@@ -49,4 +52,4 @@
 <p>
   Form Status: {{profileForm.status}}
 </p>
-<button (click)="goBack()">go back</button>
+

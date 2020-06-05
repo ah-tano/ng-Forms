@@ -7,4 +7,3 @@ export class Worker {
   ) {}
 }
 
-let newWorker = new Worker(1, 'John', 'JavaScript Developer', 'dry fruits')
